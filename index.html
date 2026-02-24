@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Barrett Software</title>
+    <meta name="description" content="Barrett Software — practical software projects by Steve Barrett." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="wrap">
+        <p class="eyebrow">Barrett Software</p>
+        <h1>Practical software for real-world operations.</h1>
+        <p class="lead">
+          I build systems that turn messy workflows into clear, reliable execution.
+        </p>
+        <a class="btn" href="#contact">Get in touch</a>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <section id="about" class="card">
+        <h2>About Steve</h2>
+        <p>
+          I’m Steve Barrett — a programmer, operator, and founder focused on building software that solves operational bottlenecks.
+          My work blends product strategy, automation, and practical deployment.
+        </p>
+      </section>
+
+      <section id="projects" class="card">
+        <h2>Projects</h2>
+        <div class="projects">
+          <article>
+            <h3>Mission Planner</h3>
+            <p>Planning-first execution system for managing projects and agent workflows.</p>
+          </article>
+          <article>
+            <h3>Workboard</h3>
+            <p>Hybrid CRM + ticketing platform for service-heavy businesses.</p>
+          </article>
+          <article>
+            <h3>Automation Stack</h3>
+            <p>Infrastructure and workflow automations for faster, lower-friction operations.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="card">
+        <h2>Contact</h2>
+        <p>Interested in working together or following progress?</p>
+        <p><a href="mailto:steven@midstatelitho.com">steven@midstatelitho.com</a></p>
+      </section>
+    </main>
+
+    <footer class="wrap footer">
+      <p>© <span id="year"></span> Barrett Software</p>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

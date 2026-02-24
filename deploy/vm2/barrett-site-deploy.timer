@@ -1,0 +1,11 @@
+[Unit]
+Description=Run Barrett Software deploy check every minute
+
+[Timer]
+OnBootSec=60
+OnUnitActiveSec=60
+Unit=barrett-site-deploy.service
+Persistent=true
+
+[Install]
+WantedBy=timers.target

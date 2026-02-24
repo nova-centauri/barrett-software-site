@@ -1,0 +1,10 @@
+[Unit]
+Description=Deploy Barrett Software site from GitHub main
+After=network-online.target docker.service
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=nova
+WorkingDirectory=/home/nova/apps/barrett-software-site
+ExecStart=/home/nova/apps/barrett-software-site/deploy/vm2/deploy.sh
