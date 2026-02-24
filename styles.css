@@ -31,7 +31,7 @@ body {
 
 .brand-logo {
   display: block;
-  width: min(680px, 88vw);
+  width: min(220px, 45vw);
   height: auto;
 }
 
