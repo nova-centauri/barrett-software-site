@@ -27,6 +27,15 @@ if ! docker ps -a --format '{{.Names}}' | grep -qx "$CONTAINER_NAME"; then
   echo "Container missing; forcing (re)build"
 fi
 
+BUILD_ID=$(git rev-parse --short HEAD)
+python3 - <<PY
+from pathlib import Path
+p = Path('index.html')
+t = p.read_text()
+t = t.replace('__BUILD_ID__', '${BUILD_ID}')
+p.write_text(t)
+PY
+
 docker build -t "$CONTAINER_NAME:latest" .
 
 docker rm -f "$CONTAINER_NAME" >/dev/null 2>&1 || true
