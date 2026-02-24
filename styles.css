@@ -24,6 +24,17 @@ body {
   padding: 5rem 0 3rem;
 }
 
+.brand-logo-wrap {
+  display: inline-block;
+  margin-bottom: .8rem;
+}
+
+.brand-logo {
+  display: block;
+  width: min(680px, 88vw);
+  height: auto;
+}
+
 .eyebrow {
   text-transform: uppercase;
   letter-spacing: .12em;
