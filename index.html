@@ -65,7 +65,7 @@
 
       <section id="contact" class="card">
         <h2>Contact</h2>
-        <p>Interested in working together or following progress?</p>
+        <p class="contact-intro">Interested in working together or following progress? Drop a message below.</p>
         <form class="contact-form" action="https://formsubmit.co/stevebarrett122@gmail.com" method="POST">
           <input type="hidden" name="_subject" value="Barrett Software Contact Form" />
           <input type="hidden" name="_captcha" value="false" />
@@ -75,21 +75,21 @@
           <div class="contact-grid">
             <label>
               Name
-              <input type="text" name="name" required />
+              <input type="text" name="name" placeholder="Your name" required />
             </label>
 
             <label>
               Email
-              <input type="email" name="email" required />
+              <input type="email" name="email" placeholder="you@example.com" required />
             </label>
           </div>
 
           <label>
             Message
-            <textarea name="message" rows="6" required></textarea>
+            <textarea name="message" rows="5" placeholder="What can I help with?" required></textarea>
           </label>
 
-          <button type="submit" class="btn">Send message</button>
+          <button type="submit" class="btn contact-submit">Send message</button>
         </form>
       </section>
     </main>
