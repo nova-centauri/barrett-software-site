@@ -54,7 +54,29 @@
       <section id="contact" class="card">
         <h2>Contact</h2>
         <p>Interested in working together or following progress?</p>
-        <p><a href="mailto:steven@midstatelitho.com">steven@midstatelitho.com</a></p>
+        <form class="contact-form" action="https://formsubmit.co/stevebarrett122@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="Barrett Software Contact Form" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="text" name="_honey" tabindex="-1" autocomplete="off" class="hp" />
+
+          <label>
+            Name
+            <input type="text" name="name" required />
+          </label>
+
+          <label>
+            Email
+            <input type="email" name="email" required />
+          </label>
+
+          <label>
+            Message
+            <textarea name="message" rows="6" required></textarea>
+          </label>
+
+          <button type="submit" class="btn">Send message</button>
+        </form>
       </section>
     </main>
 
